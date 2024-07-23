@@ -170,3 +170,11 @@ section.especialidades .especialidades-box h3{
     font-size: 28px;
     margin: 15px 0;
 }
+
+/* ESTILO DE SOBRE */
+
+.img-sobre img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
