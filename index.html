@@ -14,8 +14,10 @@
     <!-- GOOGLE ICONS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- FIM GOOGLE ICONS -->   
-
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
     <title>Tekta Drone</title>
 </head>
 <body>
@@ -23,29 +25,51 @@
     <header>
         <div class="interface">
              <div class="logo">
-                <a href="#">
+                <a href="#inicio">
                     <img src="images/logo.png" alt="Logo da Agência Tekta">
                 </a>
-             </div><!--logo-->>
+             </div><!--logo-->
 
              <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formulario">Projetos</a></li>
                 </ul>
              </nav>
              <div class="btn-contato">
-                <a href="#">
+                <a href="https://wa.me/556294438999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20com%20drone">
                     <button>Contato</button>
                 </a>
-             </div><!--btn-contato-->>
+             </div><!--btn-contato-->
+
+             <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+             </div>
+
+             <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#formulario">Contato</a></li>
+                    </ul>
+                 </nav>
+
+             </div><!--menu-mobile-->
+             <div class="overlay-menu" id="overlay-menu"> </div>
         </div><!--interface-->
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class = "txt-topo-site">
@@ -54,7 +78,7 @@
                         <p>Eleve sua história e veja seu mundo de uma forma totalmente nova! Nossa equipe especializada em filmagem aérea está pronta para transformar o seu sonho com imagens deslumbrantes e perspectivas únicas. Quer você esteja promovendo um empreendimento imobiliário, capturando a grandiosidade de um evento ou criando conteúdos visuais de impacto para sua marca. Queremos levar sua visão além do horizonte com filmagens aéreas que realmente destacam o que há de melhor em cada momento.</p>
 
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="https://wa.me/556294438999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20com%20drone">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -64,10 +88,10 @@
                         <img src="images/pessoa.png" alt="">
                     </div><!--img-topo-site-->
                 </div><!--flex-->
-            </div><!--Interface-->>
-        </section> <!--topo-do-site-->>
+            </div><!--Interface-->
+        </section> <!--topo-do-site-->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">NOSSAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -90,9 +114,9 @@
                     </div><!--especialidades-box-->
                 </div><!--flex-->
             </div><!--Interface-->
-        </section><!--especialidades-->>
+        </section><!--especialidades-->
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -114,7 +138,7 @@
             </div><!--interface-->
         </section><!--sobre-->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="interface">
                 <h2 class="titulo">NOSSO <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -130,7 +154,38 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portfolio-->
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>CONOSCO.</span></h2> 
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:">
+                    <input type="text" name="" id="" placeholder="Seu celular: " required>
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="">
+                    </div><!--logo-footer-->
+                    <div class="btn-social">
+                        <a href="https://wa.me/556294438999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20com%20drone"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://www.instagram.com/tekta.drone/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="mailto:contato.tektadrone@gmail.com?subject=Or%C3%A7amento"><button><i class="bi bi-envelope-at"></i></button></i></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
 
 </body>
 </html>
